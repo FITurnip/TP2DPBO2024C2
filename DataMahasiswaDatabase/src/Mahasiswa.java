@@ -2,11 +2,13 @@ public class Mahasiswa {
     private String nim;
     private String nama;
     private String jenisKelamin;
+    private String kondisiRilis;
 
-    public Mahasiswa(String nim, String nama, String jenisKelamin) {
+    public Mahasiswa(String nim, String nama, String jenisKelamin, String kondisiRilis) {
         this.nim = nim;
         this.nama = nama;
         this.jenisKelamin = jenisKelamin;
+        this.kondisiRilis = kondisiRilis;
     }
 
     public void setNim(String nim) {
@@ -21,6 +23,9 @@ public class Mahasiswa {
         this.jenisKelamin = jenisKelamin;
     }
 
+    public void setKondisiRilis(String kondisiRilis) {
+        this.kondisiRilis = kondisiRilis;
+    }
     public String getNim() {
         return this.nim;
     }
@@ -32,4 +37,6 @@ public class Mahasiswa {
     public String getJenisKelamin() {
         return this.jenisKelamin;
     }
+
+    public String getKondisiRilis() { return this.kondisiRilis; }
 }
